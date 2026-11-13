@@ -1,0 +1,8 @@
+{
+  "realUiConfirmation": true,
+  "processClosed": true,
+  "databaseAndHmacKeysRenewed": true,
+  "oldPrivateMarkersGone": true,
+  "ledgerAndCustomRulesEmpty": true,
+  "freshConsent": true
+}

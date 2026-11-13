@@ -1,0 +1,21 @@
+# F4 — Consultas, clasificación y alertas locales
+
+Los indicadores y filtros usan funciones puras de `feature/dashboard`. El mes y los rangos se convierten a instantes mediante `America/Guayaquil`. Los rangos de pantalla incluyen ambos días y las consultas usan fin exclusivo. Consumo es gasto más compra de crédito menos devolución. Las devoluciones pertenecen al mes de su registro y a la categoría actual de su compra. Los cálculos monetarios intermedios usan BigInteger y comprueban el rango Long al devolver centavos.
+
+Los saldos al cierre se derivan del saldo inicial y los asientos de operaciones vigentes hasta ese cierre. Sin saldo inicial se muestra variación. Los pagos de tarjeta, recargas y transferencias internas conservan sus efectos en cuentas, con exclusión de indicadores de consumo e ingreso externo. Los filtros por cuenta incluyen ambos lados de una operación interna.
+
+Los lectores, filtros, revisión y edición reutilizan `accountType` para interpretar las cuentas históricas `BANK` como cuentas bancarias. Esta equivalencia evita exigir correcciones de instrumento por una diferencia de representación. Editar el alias conserva su tipo financiero y saldo.
+
+El ciclo de crédito incluye el día de corte. Comienza al día siguiente del corte anterior y termina al día siguiente del corte actual con extremo exclusivo. Los días fuera de un mes se ajustan al último día existente. El vencimiento estimado es el primer día configurado posterior al corte. El consumo del ciclo y los pagos se calculan de forma independiente. Son estimaciones que deben contrastarse con el emisor.
+
+Room v5 añade `alertsEnabled`, `threshold` y `lastNotifiedLevel` al presupuesto, y `categoryId` y `categoryDecided` al candidato. Los presupuestos existentes migran con alertas desactivadas. La marca de categoría distingue una decisión manual de dejarla vacía de una clasificación todavía pendiente. Los historiales F3 se normalizan al leer los nuevos campos para permitir deshacer decisiones anteriores a la actualización.
+
+Las reglas usan coincidencia exacta o contiene sobre comercio normalizado. Se eliminan diferencias de mayúsculas, acentos y espacios repetidos. Se elige mayor prioridad y luego identificador estable. Se sugieren categorías al crear movimientos. La elección manual tiene precedencia. Los registros existentes requieren una acción explícita para aplicar la regla. Alias y categoría se guardan mediante el caso de uso del libro, con versión y snapshot reversible. El texto de origen permanece separado.
+
+El libro observado utiliza invalidación de Room y una lectura transaccional para mantener consistentes operaciones, asientos, cuentas y organización en cada emisión. Los avisos de presupuesto vuelven a leer los datos dentro de una transacción, comprueban el mes actual y conservan la marca del nivel enviado. Cambiar límite o umbral reinicia la evaluación. Si Android rechaza el aviso, su nivel queda pendiente.
+
+WorkManager comprueba presupuestos después de cambios en la app y con periodicidad mínima de 15 minutos mientras existan alertas activadas. El permiso POST_NOTIFICATIONS se declara para avisos propios y se solicita exclusivamente desde los controles de presupuestos. El acceso del listener es independiente. Los avisos usan contenido genérico, sin importes ni alias de cuentas o categorías. Un identificador estable por presupuesto permite reemplazar el aviso anterior durante reintentos. El envío al sistema y la marca SQLite pertenecen a sistemas distintos, por lo que una interrupción entre ambos puede volver a publicar el mismo identificador.
+
+La captura, fuentes, pausa y privacidad conservan su autorización explícita. La exportación y eliminación completa corresponden a F5. La cobertura bancaria y la deuda continúan siendo preliminar y estimada. La verificación instrumental comprueba semántica e interacción, y el recorrido físico con TalkBack se registra como validación manual pendiente cuando no se dispone de ese servicio.
+
+La cabecera usa una fila Material con altura mínima y crecimiento según el texto. La revisión al 200 % encontró recorte en la barra de altura fija y motivó ese ajuste. Se mantuvieron las etiquetas de navegación y los insets del sistema.

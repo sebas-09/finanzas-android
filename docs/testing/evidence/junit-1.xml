@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="ec.finanzas.model.FoundationTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2026-11-09T16:48:29.662Z" hostname="DESKTOP-S771NJ9" time="0.237">
+  <properties/>
+  <testcase name="invalidRefundOrRepeatedAccountIsRejected" classname="ec.finanzas.model.FoundationTest" time="0.161"/>
+  <testcase name="moneyIsExactAndRejectsRoundingAndOverflow" classname="ec.finanzas.model.FoundationTest" time="0.014"/>
+  <testcase name="incompleteAndSyntheticMovementsCannotEnterConfirmedLedger" classname="ec.finanzas.model.FoundationTest" time="0.046"/>
+  <testcase name="captureUsesPublicationTimeAndCurrentConsentWindow" classname="ec.finanzas.model.FoundationTest" time="0.014"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

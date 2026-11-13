@@ -1,0 +1,67 @@
+{
+  "phase": "F4",
+  "date": "2026-11-11",
+  "versionName": "0.5.0-f4",
+  "versionCode": 5,
+  "artifact": "artifacts/finanzas-locales-f4-debug.apk",
+  "sha256": "49e15a14b89a3240de703587d201cc9dd6d91650dcd4faeae2a39cebe3757792",
+  "signerSha256": "4c25c60c1f166aa9048df078172f89164251d5b6a15f59b9cdc1f4d23f25f656",
+  "build": "passed",
+  "lint": "passed",
+  "manifest": "passed",
+  "jvm": {
+    "passed": 47,
+    "failed": 0
+  },
+  "android": {
+    "29": {
+      "databasePassed": 22,
+      "databaseSkipped": 1,
+      "appPassed": 7,
+      "processRestartWrite": "passed",
+      "processRestartRead": "passed",
+      "profile": "finanzas-f0-api29",
+      "finalApks": true
+    },
+    "36": {
+      "databasePassed": 22,
+      "databaseSkipped": 1,
+      "appPassed": 7,
+      "processRestartWrite": "passed",
+      "processRestartRead": "passed",
+      "profile": "finanzas-f3-api36-clean",
+      "finalApks": true,
+      "conditions": [
+        "airplane mode",
+        "dark theme",
+        "font scale 2.0",
+        "animations disabled"
+      ]
+    }
+  },
+  "testApkSha256": {
+    "app/build/outputs/apk/androidTest/debug/app-debug-androidTest.apk": "ae2bc7aa3500d5769539654128cbea83b0f9125f5e99668e18f5a5d942ee5d47",
+    "core/database/build/outputs/apk/androidTest/debug/database-debug-androidTest.apk": "ec2a66e53946e8aa7220df613d8a28d05507ed9dbb126ee26abb747184bad71f"
+  },
+  "manualWorkerAlert": {
+    "verified": true,
+    "conditions": "Airplane mode; real expense 399 cents, budget 300 cents, runtime permission via system dialog",
+    "cleanup": "Budget removed, expense undone, QA-F4 account archived; no posted movements remain",
+    "scope": "Manual run before final header/icon polish and legacy BANK compatibility patch; final instrumented suites cover delivered binary"
+  },
+  "accessibility": {
+    "contrastTextPairs": 10,
+    "largeText": "200% verified on API36",
+    "darkTheme": "verified",
+    "landscape": "verified",
+    "talkback": "pending: service unavailable in emulator images"
+  },
+  "limitations": [
+    "F4.07 remains partially verified; spoken TalkBack interaction pending",
+    "Physical banking and OEM validation pending",
+    "Debug artifact; release signing, CSV export and total deletion remain F5",
+    "System UI ANRs observed in emulator environment; evidence retained",
+    "API36 uses additional clean profile after original AVD boot failures"
+  ],
+  "verificationWindow": "2026-11-10/2026-11-11"
+}

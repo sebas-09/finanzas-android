@@ -1,0 +1,21 @@
+# F3: operaciones, efectos y vínculos reversibles
+
+El libro conserva una operación y sus efectos por cuenta. `LedgerRules` es puro: gastos de efectivo restan activos; compras a crédito suman deuda y gasto; pagos de tarjeta restan efectivo y deuda sin gasto; transferencias propias y recargas mueven activos sin ingreso/gasto. Una devolución requiere una compra vigente de la misma cuenta, reduce consumo y revierte efectivo/deuda; el conjunto de devoluciones no puede superar la compra.
+
+Los saldos se derivan de los efectos vigentes. Una cuenta sin saldo/deuda inicial muestra solamente variación, nunca un saldo cero inventado. Todos los importes son Long en centavos; los agregados usan BigInteger y solo se convierten a Long tras comprobar rango. No se almacenan acumuladores que puedan quedar desactualizados al editar o borrar.
+
+`BookStore` persiste operación, efectos, resolución de candidatos, vínculos e historial en una sola transacción Room/SQLCipher. Un fallo revierte el conjunto. Las pruebas sintéticas, borrados, vinculados secundarios y pendientes no afectan el libro. Los candidatos confirmados en F2 continúan pendientes de contabilizar: se exige fecha, cuenta, clasificación y, para movimientos internos/pagos, otra cuenta propia. Usar recepción como fecha estimada es una decisión explícita.
+
+La migración 3→4 conserva tablas, claves y decisiones. Las cuentas legacy DEBIT_CARD pasan a BANK_ACCOUNT con perfil DEBIT: la tarjeta de débito comparte el saldo de esa cuenta. Crédito mantiene deuda separada del efectivo. Los atributos de corte, vencimiento y límite son opcionales; el cálculo de ciclos corresponde a F4.
+
+La repetición de una publicación exacta (paquete, clave HMAC, instante de publicación y revisión HMAC) se reconoce sin crear otra observación. Una revisión diferente se conserva. La repetición de una decisión ya aplicada no vuelve a aplicar efectos. Una clave cercana ya contabilizada obliga a vincular o confirmar expresamente que describe otra operación. No se deduplica por importe y minuto.
+
+`ObservationMatching` distingue evidencia técnica exacta, referencia bancaria fuerte y simples sugerencias. La referencia exige mismo contexto de cuenta, importe, tipo, sentido, proveedor y ventana temporal; los datos contradictorios y varios matches no eligen un registro silenciosamente. Las coincidencias por importe/fecha/comercio sin referencia solo ayudan al usuario. En F2 los parsers no extraen referencias reales verificadas, por lo que esa regla automática permanece sin cobertura bancaria física y se prueba con fixtures.
+
+La conciliación manual admite dos avisos de una operación y lados complementarios de transferencias, recargas o pagos. Conserva observaciones independientes. Si dos operaciones ya estaban contabilizadas, se conserva una operación canónica con efectos completos y la secundaria queda vinculada fuera del cómputo. `transfer_link` solo explica la relación; no vuelve a aplicar efectos. Esta reclasificación corrige consumo/ingreso anteriores sin duplicar variación de cuentas.
+
+El historial cifrado guarda solo las filas afectadas: operaciones, efectos, vínculos y decisiones. El deshacer compara la expectativa vigente, conserva metadatos técnicos nuevos de las observaciones y restaura los efectos previos. Las operaciones independientes posteriores no se eliminan. Los cambios vinculados que impidan restaurar una compra/devolución se resuelven primero; las validaciones se ejecutan también al deshacer.
+
+`ledger_version` mantiene revisiones monótonas incluso si se deshace una creación y se vuelve a usar el identificador de su candidato. Esto evita el problema ABA: un editor antiguo no puede aprovechar una revisión reutilizada para sobrescribir otra decisión. Al deshacer se ajusta la expectativa de versión del historial anterior solo si sus datos lógicos coinciden; nunca se reescriben decisiones financieras posteriores.
+
+Los textos de notificaciones permanecen en RAM. El historial contiene datos normalizados y notas introducidas por el usuario, siempre dentro de SQLCipher. La auditoría técnica guarda identificadores, acciones y nombres de campos, sin importes, notas ni cuerpos. PeiGo sigue sin parser de producción: las compras y pagos de crédito de esta fase son manuales o fixtures. La validación en teléfono bancario sigue pendiente.

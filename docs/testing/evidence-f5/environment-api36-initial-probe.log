@@ -1,0 +1,113 @@
+11-12 16:41:01.707     0     0 I UprobeStatsBpfLoad: UprobeStatsBpfLoad loading optional ELF object /apex/com.android.uprobestats/etc/bpf/uprobestats/GenericInstrumentation.o with license GPL
+11-12 16:41:01.720     0     0 D UprobeStatsBpfLoad: map /sys/fs/bpf/uprobestats/map_GenericInstrumentation_call_detail_buf id 41
+11-12 16:41:01.720     0     0 D UprobeStatsBpfLoad: map /sys/fs/bpf/uprobestats/map_GenericInstrumentation_call_timestamp_buf id 42
+11-12 16:41:01.723     0     0 D UprobeStatsBpfLoad: prog /sys/fs/bpf/uprobestats/prog_GenericInstrumentation_uprobe_call_detail id 40
+11-12 16:41:01.723     0     0 D UprobeStatsBpfLoad: prog /sys/fs/bpf/uprobestats/prog_GenericInstrumentation_uprobe_call_timestamp_1 id 41
+11-12 16:41:01.728     0     0 D UprobeStatsBpfLoad: prog /sys/fs/bpf/uprobestats/prog_GenericInstrumentation_uprobe_call_timestamp_2 id 42
+11-12 16:41:01.728     0     0 D UprobeStatsBpfLoad: prog /sys/fs/bpf/uprobestats/prog_GenericInstrumentation_uprobe_call_timestamp_3 id 43
+11-12 16:41:01.732     0     0 D UprobeStatsBpfLoad: prog /sys/fs/bpf/uprobestats/prog_GenericInstrumentation_uprobe_call_timestamp_4 id 44
+11-12 16:41:01.732     0     0 D UprobeStatsBpfLoad: prog /sys/fs/bpf/uprobestats/prog_GenericInstrumentation_uprobe_call_timestamp_5 id 45
+11-12 16:44:09.609   677   677 D SystemServerTiming: StartDynamicInstrumentationManager
+11-12 16:44:09.610   677   677 I SystemServiceManager: Starting com.android.server.os.instrumentation.DynamicInstrumentationManagerService
+11-12 16:44:09.615   677   677 V SystemServerTiming: StartDynamicInstrumentationManager took to complete: 6ms
+11-12 16:44:10.194   677   677 D SystemServerTiming: OnBootPhase_480_com.android.server.os.instrumentation.DynamicInstrumentationManagerService
+11-12 16:44:10.195   677   677 V SystemServerTiming: OnBootPhase_480_com.android.server.os.instrumentation.DynamicInstrumentationManagerService took to complete: 0ms
+11-12 16:44:11.867   677   677 D SystemServerTiming: OnBootPhase_500_com.android.server.os.instrumentation.DynamicInstrumentationManagerService
+11-12 16:44:11.867   677   677 V SystemServerTiming: OnBootPhase_500_com.android.server.os.instrumentation.DynamicInstrumentationManagerService took to complete: 0ms
+11-12 16:44:14.933   677   677 D SystemServerTiming: OnBootPhase_520_com.android.server.os.instrumentation.DynamicInstrumentationManagerService
+11-12 16:44:14.934   677   677 V SystemServerTiming: OnBootPhase_520_com.android.server.os.instrumentation.DynamicInstrumentationManagerService took to complete: 0ms
+11-12 16:44:17.355   677   677 D SystemServerTiming: OnBootPhase_550_com.android.server.os.instrumentation.DynamicInstrumentationManagerService
+11-12 16:44:17.391   677   677 V SystemServerTiming: OnBootPhase_550_com.android.server.os.instrumentation.DynamicInstrumentationManagerService took to complete: 0ms
+11-12 16:44:25.870   677   677 D SystemServerTiming: OnBootPhase_600_com.android.server.os.instrumentation.DynamicInstrumentationManagerService
+11-12 16:44:25.929   677   677 V SystemServerTiming: OnBootPhase_600_com.android.server.os.instrumentation.DynamicInstrumentationManagerService took to complete: 2ms
+11-12 16:44:35.310   677   677 D SystemServerTimingAsync: ssm.onStartUser-0_com.android.server.os.instrumentation.DynamicInstrumentationManagerService
+11-12 16:44:35.310   677   677 V SystemServerTimingAsync: ssm.onStartUser-0_com.android.server.os.instrumentation.DynamicInstrumentationManagerService took to complete: 0ms
+11-12 16:45:36.296   677   712 D ActivityManagerTiming: OnBootPhase_1000_com.android.server.os.instrumentation.DynamicInstrumentationManagerService
+11-12 16:45:36.296   677   712 V ActivityManagerTiming: OnBootPhase_1000_com.android.server.os.instrumentation.DynamicInstrumentationManagerService took to complete: 0ms
+11-12 16:46:04.088   677   720 D SystemServerTimingAsync: ssm.onUnlockingUser-0_com.android.server.os.instrumentation.DynamicInstrumentationManagerService
+11-12 16:46:05.324   677   720 V SystemServerTimingAsync: ssm.onUnlockingUser-0_com.android.server.os.instrumentation.DynamicInstrumentationManagerService took to complete: 213ms
+11-12 16:47:35.842   677   783 D InstallDependencyHelper: No missing dependency for ec.finanzas.locales
+11-12 16:47:37.848   230   230 E vold    : Failed to find mounted volume for /dev/null/Android/obb/ec.finanzas.locales/
+11-12 16:47:37.868   677   748 E StorageManagerService: Failed to fixup app dir for ec.finanzas.locales
+11-12 16:47:42.368   677   748 D BackupManagerService: [UserID:0] restoreAtInstall pkg=ec.finanzas.locales token=1 restoreSet=0
+11-12 16:47:42.785   677   748 I PackageManager: installation completed for package:ec.finanzas.locales. Final code path: /data/app/~~lYzpmCr1F6YeXk-R3RWUPA==/ec.finanzas.locales-GYDojJ2R6Wy40uJAaC_B9A==
+11-12 16:47:43.236   677  1014 D BackgroundInstallControlService: handlePackageAdd: checking ec.finanzas.locales
+11-12 16:47:43.398   677  1014 D BackgroundInstallControlService: handlePackageAdd ec.finanzas.locales: installer (null) doesn't have INSTALL_PACKAGES permission, skipping
+11-12 16:47:46.516   677   719 D LauncherAppsService: onPackageAdded: triggering onPackageAdded for user=UserHandle{0}, packageName=ec.finanzas.locales
+11-12 16:47:46.651   677   783 D InstallDependencyHelper: No missing dependency for ec.finanzas.locales.test
+11-12 16:47:49.622  1069  1069 I SafetyLabelChangedBroadcastReceiver: received broadcast packageName: ec.finanzas.locales, current user: UserHandle{0}, packageChangeEvent: NEW_INSTALL, intent user: UserHandle{0}
+11-12 16:47:53.056  1336  1336 W Resources: 	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1521)
+11-12 16:47:53.058  1336  1336 W Resources: 	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1521)
+11-12 16:47:56.859   677  1020 I SdkSandboxManager: No SDKs used. Skipping SDK data reconcilation for CallingInfo{mUid=10150, mPackageName='ec.finanzas.locales, mAppProcessToken='null'}
+11-12 16:47:56.982   677  1011 D ShortcutService: adding package: ec.finanzas.locales userId=0
+11-12 16:48:03.168   230   233 E vold    : Failed to find mounted volume for /storage/emulated/0/Android/obb/ec.finanzas.locales.test/
+11-12 16:48:03.292   677   748 E StorageManagerService: Failed to fixup app dir for ec.finanzas.locales.test
+11-12 16:48:05.234   677   748 D BackupManagerService: [UserID:0] restoreAtInstall pkg=ec.finanzas.locales.test token=2 restoreSet=0
+11-12 16:48:05.491  1336  1362 I Launcher.IconCache: Database bulk icon loading failed, using fallback bulk icon loading for: ComponentInfo{ec.finanzas.locales/ec.finanzas.locales.MainActivity}
+11-12 16:48:05.590  1336  1362 I Launcher.IconCache: Database bulk icon loading failed, using fallback bulk icon loading for: ComponentInfo{ec.finanzas.locales.test/android.app.AppDetailsActivity}
+11-12 16:48:05.616  1336  1362 W LauncherActivityCachingLogic: loadIcon: Default app icon returned from PackageManager. component=ComponentInfo{ec.finanzas.locales.test/android.app.AppDetailsActivity}, user=UserHandle{0}
+11-12 16:48:08.159   677   748 I PackageManager: installation completed for package:ec.finanzas.locales.test. Final code path: /data/app/~~DHEjZSi-9CvdP42pPIwQ0g==/ec.finanzas.locales.test-hPDfA813E_2F_0Ecjk2uQQ==
+11-12 16:48:09.298   677  1014 D BackgroundInstallControlService: handlePackageAdd: checking ec.finanzas.locales.test
+11-12 16:48:09.299   677  1014 D BackgroundInstallControlService: handlePackageAdd ec.finanzas.locales.test: installer (null) doesn't have INSTALL_PACKAGES permission, skipping
+11-12 16:48:18.450  1336  1362 D SessionCommitReceiver: Removing unneeded PromiseIcon for package: ec.finanzas.locales, install reason: 0, alreadyAddedPromiseIcon: false
+11-12 16:48:19.704  2009  2009 E StrictMode: 	at android.app.Instrumentation.callApplicationOnCreate(Instrumentation.java:1381)
+11-12 16:48:20.018  2009  2009 E StrictMode: 	at android.app.Instrumentation.callApplicationOnCreate(Instrumentation.java:1381)
+11-12 16:48:20.349  2009  2009 E StrictMode: 	at android.app.Instrumentation.callApplicationOnCreate(Instrumentation.java:1381)
+11-12 16:48:20.366  2009  2009 E StrictMode: 	at android.app.Instrumentation.callApplicationOnCreate(Instrumentation.java:1381)
+11-12 16:48:20.496  2009  2009 E StrictMode: 	at android.app.Instrumentation.callApplicationOnCreate(Instrumentation.java:1381)
+11-12 16:48:20.557  1336  1362 W LauncherActivityCachingLogic: loadIcon: Default app icon returned from PackageManager. component=ComponentInfo{ec.finanzas.locales.test/android.app.AppDetailsActivity}, user=UserHandle{0}
+11-12 16:48:20.800  1336  1362 D SessionCommitReceiver: Removing unneeded PromiseIcon for package: ec.finanzas.locales.test, install reason: 0, alreadyAddedPromiseIcon: false
+11-12 16:48:20.890   677  1029 I ActivityManager: Force stopping ec.finanzas.locales appid=10150 user=0: start instr
+11-12 16:48:21.072   677   711 E AppHibernationService: Package ec.finanzas.locales is not installed for user 0
+11-12 16:48:21.072   677   711 E AppHibernationService: Package ec.finanzas.locales is not installed for any user
+11-12 16:48:23.007   677   721 I ActivityManager: Start proc 2085:ec.finanzas.locales/u0a150 for added application ec.finanzas.locales
+11-12 16:48:23.593   677  1020 I SdkSandboxManager: No SDKs used. Skipping SDK data reconcilation for CallingInfo{mUid=10151, mPackageName='ec.finanzas.locales.test, mAppProcessToken='null'}
+11-12 16:48:23.627   677  1011 D ShortcutService: adding package: ec.finanzas.locales.test userId=0
+11-12 16:48:24.892  2085  2085 W ActivityThread: Package uses different ABI(s) than its instrumentation: package[ec.finanzas.locales]: x86_64, null instrumentation[ec.finanzas.locales.test]: null, null
+11-12 16:48:25.537  1069  1069 I SafetyLabelChangedBroadcastReceiver: received broadcast packageName: ec.finanzas.locales.test, current user: UserHandle{0}, packageChangeEvent: NEW_INSTALL, intent user: UserHandle{0}
+11-12 16:48:25.581   677   995 I AppWidgetServiceImpl: Updating package stopped masked state for uid 10150 package ec.finanzas.locales isStopped false
+11-12 16:48:28.024   677   719 D LauncherAppsService: onPackageAdded: triggering onPackageAdded for user=UserHandle{0}, packageName=ec.finanzas.locales.test
+11-12 16:48:28.027  1336  1362 D LauncherAppsCallbackImpl: onPackageAdded triggered for packageName=ec.finanzas.locales.test, user=UserHandle{0}
+11-12 16:48:28.029  1336  1362 D PackageUpdatedTask: Package updated: mOp=ADD packages=[ec.finanzas.locales.test], user=UserHandle{0}
+11-12 16:48:28.031   677   719 D LauncherAppsService: onPackageAdded: triggering onPackageAdded for user=UserHandle{0}, packageName=ec.finanzas.locales.test
+11-12 16:48:28.217  1336  1362 W LauncherActivityCachingLogic: loadIcon: Default app icon returned from PackageManager. component=ComponentInfo{ec.finanzas.locales.test/ec.finanzas.locales.TestSourceActivity}, user=UserHandle{0}
+11-12 16:48:28.242  1336  1362 W LauncherActivityCachingLogic: loadIcon: Default app icon returned from PackageManager. component=ComponentInfo{ec.finanzas.locales.test/ec.finanzas.locales.TestSourceActivity}, user=UserHandle{0}
+11-12 16:48:28.413  1336  1362 D BaseIconCache: Default icon returned for ec.finanzas.locales.test
+11-12 16:48:29.165   677   748 I AppsFilter: interaction: PackageSetting{1d0203f ec.finanzas.locales/10150} -> PackageSetting{f2b1d0c com.android.photopicker/10144} BLOCKED
+11-12 16:48:29.165   677   748 I AppsFilter: interaction: PackageSetting{4e76ac2 ec.finanzas.locales.test/10151} -> PackageSetting{f2b1d0c com.android.photopicker/10144} BLOCKED
+11-12 16:48:29.219   513   991 D NativePermissionController: updatePackagesForUid, UidPackageState{uid: 10150, packageNames: [ec.finanzas.locales]}
+11-12 16:48:31.070  2085  2085 D nativeloader: Configuring clns-9 for other apk /system/framework/android.test.runner.jar:/system/framework/android.test.mock.jar:/system/framework/android.test.base.jar:/data/app/~~DHEjZSi-9CvdP42pPIwQ0g==/ec.finanzas.locales.test-hPDfA813E_2F_0Ecjk2uQQ==/base.apk:/data/app/~~lYzpmCr1F6YeXk-R3RWUPA==/ec.finanzas.locales-GYDojJ2R6Wy40uJAaC_B9A==/base.apk. target_sdk_version=36, uses_libraries=, library_path=/data/app/~~DHEjZSi-9CvdP42pPIwQ0g==/ec.finanzas.locales.test-hPDfA813E_2F_0Ecjk2uQQ==/lib/x86_64:/data/app/~~lYzpmCr1F6YeXk-R3RWUPA==/ec.finanzas.locales-GYDojJ2R6Wy40uJAaC_B9A==/lib/x86_64:/data/app/~~DHEjZSi-9CvdP42pPIwQ0g==/ec.finanzas.locales.test-hPDfA813E_2F_0Ecjk2uQQ==/base.apk!/lib/x86_64:/data/app/~~lYzpmCr1F6YeXk-R3RWUPA==/ec.finanzas.locales-GYDojJ2R6Wy40uJAaC_B9A==/base.apk!/lib/x86_64, permitted_path=/data:/mnt/expand:/data/user/0/ec.finanzas.locales
+11-12 16:48:31.267  2085  2085 V GraphicsEnvironment: ec.finanzas.locales is not listed in per-application setting
+11-12 16:48:31.267  2085  2085 V GraphicsEnvironment: ec.finanzas.locales is not listed in ANGLE allowlist or settings, returning default
+11-12 16:48:31.559   513   549 D NativePermissionController: updatePackagesForUid, UidPackageState{uid: 10151, packageNames: [ec.finanzas.locales.test]}
+11-12 16:48:31.647  2085  2085 D nativeloader: Configuring clns-10 for other apk /system/framework/android.test.mock.jar. target_sdk_version=36, uses_libraries=ALL, library_path=/data/app/~~DHEjZSi-9CvdP42pPIwQ0g==/ec.finanzas.locales.test-hPDfA813E_2F_0Ecjk2uQQ==/lib/x86_64:/data/app/~~lYzpmCr1F6YeXk-R3RWUPA==/ec.finanzas.locales-GYDojJ2R6Wy40uJAaC_B9A==/lib/x86_64, permitted_path=/data:/mnt/expand
+11-12 16:48:31.716  2085  2085 D nativeloader: Configuring clns-11 for other apk /system/framework/android.test.runner.jar. target_sdk_version=36, uses_libraries=ALL, library_path=/data/app/~~DHEjZSi-9CvdP42pPIwQ0g==/ec.finanzas.locales.test-hPDfA813E_2F_0Ecjk2uQQ==/lib/x86_64:/data/app/~~lYzpmCr1F6YeXk-R3RWUPA==/ec.finanzas.locales-GYDojJ2R6Wy40uJAaC_B9A==/lib/x86_64, permitted_path=/data:/mnt/expand
+11-12 16:48:31.722  2085  2085 W inanzas.locales: ClassLoaderContext shared library size mismatch. Expected=2, found=3 (PCL[]{PCL[/system/framework/android.test.base.jar*2789897741]#PCL[/system/framework/android.test.mock.jar*3361312393]} | PCL[]{PCL[/system/framework/android.test.base.jar*2789897741]#PCL[/system/framework/android.test.mock.jar*3361312393]#PCL[/system/framework/android.test.runner.jar*895143020]{PCL[/system/framework/android.test.base.jar*2789897741]#PCL[/system/framework/android.test.mock.jar*3361312393]}};PCL[/system/framework/android.test.runner.jar*895143020:/system/framework/android.test.mock.jar*3361312393:/system/framework/android.test.base.jar*2789897741:/data/app/~~DHEjZSi-9CvdP42pPIwQ0g==/ec.finanzas.locales.test-hPDfA813E_2F_0Ecjk2uQQ==/base.apk*3212378399:/data/app/~~lYzpmCr1F6YeXk-R3RWUPA==/ec.finanzas.locales-GYDojJ2R6Wy40uJAaC_B9A==/base.apk*83728365])
+11-12 16:48:31.772  2085  2085 W inanzas.locales: ClassLoaderContext classpath size mismatch. expected=0, found=1 (PCL[] | PCL[/system/framework/android.test.runner.jar*895143020]{PCL[/system/framework/android.test.base.jar*2789897741]#PCL[/system/framework/android.test.mock.jar*3361312393]#PCL[/system/framework/android.test.runner.jar*895143020]{PCL[/system/framework/android.test.base.jar*2789897741]#PCL[/system/framework/android.test.mock.jar*3361312393]}};PCL[/system/framework/android.test.runner.jar*895143020:/system/framework/android.test.mock.jar*3361312393:/system/framework/android.test.base.jar*2789897741:/data/app/~~DHEjZSi-9CvdP42pPIwQ0g==/ec.finanzas.locales.test-hPDfA813E_2F_0Ecjk2uQQ==/base.apk*3212378399:/data/app/~~lYzpmCr1F6YeXk-R3RWUPA==/ec.finanzas.locales-GYDojJ2R6Wy40uJAaC_B9A==/base.apk*83728365])
+11-12 16:48:31.778  2085  2085 W inanzas.locales: ClassLoaderContext classpath size mismatch. expected=0, found=2 (PCL[] | PCL[/system/framework/android.test.runner.jar*895143020:/system/framework/android.test.mock.jar*3361312393]{PCL[/system/framework/android.test.base.jar*2789897741]#PCL[/system/framework/android.test.mock.jar*3361312393]#PCL[/system/framework/android.test.runner.jar*895143020]{PCL[/system/framework/android.test.base.jar*2789897741]#PCL[/system/framework/android.test.mock.jar*3361312393]}};PCL[/system/framework/android.test.runner.jar*895143020:/system/framework/android.test.mock.jar*3361312393:/system/framework/android.test.base.jar*2789897741:/data/app/~~DHEjZSi-9CvdP42pPIwQ0g==/ec.finanzas.locales.test-hPDfA813E_2F_0Ecjk2uQQ==/base.apk*3212378399:/data/app/~~lYzpmCr1F6YeXk-R3RWUPA==/ec.finanzas.locales-GYDojJ2R6Wy40uJAaC_B9A==/base.apk*83728365])
+11-12 16:48:34.332  1336  1336 W Resources: 	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1521)
+11-12 16:48:34.340  1336  1336 W Resources: 	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1521)
+11-12 16:48:36.706  2085  2085 W inanzas.locales: Verification of android.app.Activity androidx.test.runner.MonitoringInstrumentation.startActivitySync(android.content.Intent) took 191.697ms (646.85 bytecodes/s) (0B arena alloc)
+11-12 16:48:36.750  2085  2085 I AndroidJUnitRunner: newApplication ec.finanzas.locales.FinanzasApplication
+11-12 16:48:42.725   677   720 D SystemServerTimingAsync: ssm.onUnlockedUser-0_com.android.server.os.instrumentation.DynamicInstrumentationManagerService
+11-12 16:48:42.937   677   720 V SystemServerTimingAsync: ssm.onUnlockedUser-0_com.android.server.os.instrumentation.DynamicInstrumentationManagerService took to complete: 104ms
+11-12 16:48:43.378   677   720 I ActivityManager: Extending process start timeout by 15000ms for ProcessRecord{f4846c3 2085:ec.finanzas.locales/u0a150}
+11-12 16:48:50.746   677  2293 D SystemServerTimingAsync: ssm.onCompletedEventUser-0_{|Unlocked|}_com.android.server.os.instrumentation.DynamicInstrumentationManagerService
+11-12 16:48:50.767   677  2293 V SystemServerTimingAsync: ssm.onCompletedEventUser-0_{|Unlocked|}_com.android.server.os.instrumentation.DynamicInstrumentationManagerService took to complete: 0ms
+11-12 16:48:55.647   677  1011 D ShortcutService: changing package: ec.finanzas.locales userId=0
+11-12 16:48:56.205   677   748 I AppsFilter: interaction: PackageSetting{cb92407 ec.finanzas.locales.test/10151} -> PackageSetting{838a934 com.android.calendar/10111} BLOCKED
+11-12 16:48:56.401  1336  1362 D PackageUpdatedTask: Package updated: mOp=UPDATE packages=[ec.finanzas.locales], user=UserHandle{0}
+11-12 16:49:00.213   677  2394 E ActivityManager: ANR in ec.finanzas.locales
+11-12 16:49:00.213   677  2394 E ActivityManager: Reason: Process ProcessRecord{f4846c3 2085:ec.finanzas.locales/u0a150} failed to complete startup
+11-12 16:49:00.263  2085  2085 W inanzas.locales: Verification of ec.finanzas.locales.FinanzasApplication_HiltComponents$SingletonC ec.finanzas.locales.DaggerFinanzasApplication_HiltComponents_SingletonC$Builder.build() took 236.615ms (63.39 bytecodes/s) (0B arena alloc)
+11-12 16:49:00.454   677  2394 I ActivityManager: Killing 2085:ec.finanzas.locales/u0a150 (adj 0): bg anr
+11-12 16:49:00.543   677  2394 D ActivityManager: Completed ANR of ec.finanzas.locales in 765ms, latency 1172ms
+11-12 16:49:01.701   677   748 I AppsFilter: interaction: PackageSetting{cb92407 ec.finanzas.locales.test/10151} -> PackageSetting{2ab1555 com.android.camera2/10106} BLOCKED
+11-12 16:49:02.055   677  1633 W ActivityManager: Crash of app ec.finanzas.locales running instrumentation ComponentInfo{ec.finanzas.locales.test/androidx.test.runner.AndroidJUnitRunner}
+11-12 16:49:02.057   677  1633 I ActivityManager: Force stopping ec.finanzas.locales appid=10150 user=0: finished inst
+11-12 16:49:05.741   677   785 I AppsFilter: interaction: PackageSetting{a3e5672 ec.finanzas.locales/10150} -> PackageSetting{90dbac3 com.android.healthconnect.controller/10132} BLOCKED
+11-12 16:49:05.742   677   785 I AppsFilter: interaction: PackageSetting{cb92407 ec.finanzas.locales.test/10151} -> PackageSetting{90dbac3 com.android.healthconnect.controller/10132} BLOCKED
+11-12 16:49:10.065   677   748 I AppsFilter: interaction: PackageSetting{a3e5672 ec.finanzas.locales/10150} -> PackageSetting{2dbba50 com.android.rkpdapp/10140} BLOCKED
+11-12 16:49:10.065   677   748 I AppsFilter: interaction: PackageSetting{cb92407 ec.finanzas.locales.test/10151} -> PackageSetting{2dbba50 com.android.rkpdapp/10140} BLOCKED
+11-12 16:49:39.964   677   748 I AppsFilter: interaction: PackageSetting{cb92407 ec.finanzas.locales.test/10151} -> PackageSetting{4a276cd com.android.cellbroadcastreceiver.module/10143} BLOCKED
+11-12 16:49:43.850   677  2010 I AppsFilter: interaction: PackageSetting{cb92407 ec.finanzas.locales.test/10151} -> PackageSetting{e87ce26 com.android.dialer/10101} BLOCKED

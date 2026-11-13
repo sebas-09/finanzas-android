@@ -1,0 +1,40 @@
+{
+  "phase": "F3",
+  "date": "2026-11-10",
+  "versionName": "0.4.0-f3",
+  "versionCode": 4,
+  "artifact": "artifacts/finanzas-locales-f3-debug.apk",
+  "sha256": "17063eecfece8a2e8b1bef674dfa341d721fb437bcee93bd6fffd61e34339206",
+  "signerSha256": "4c25c60c1f166aa9048df078172f89164251d5b6a15f59b9cdc1f4d23f25f656",
+  "build": "passed",
+  "lint": "passed",
+  "manifest": "passed",
+  "jvm": {
+    "passed": 41,
+    "failed": 0
+  },
+  "android": {
+    "29": {
+      "databasePassed": 18,
+      "databaseSkipped": 1,
+      "appPassed": 5,
+      "processRestartWrite": "passed",
+      "processRestartRead": "passed",
+      "profile": "finanzas-f0-api29"
+    },
+    "36": {
+      "databasePassed": 18,
+      "databaseSkipped": 1,
+      "appPassed": 5,
+      "processRestartWrite": "passed",
+      "processRestartRead": "passed",
+      "profile": "finanzas-f3-api36-clean"
+    }
+  },
+  "limitations": [
+    "Physical banking capture and OEM validation pending",
+    "Full accessibility validation pending in F4/F5",
+    "Debug artifact, release signing pending in F5",
+    "API36 verified on an additional clean profile after old profile failed to boot"
+  ]
+}

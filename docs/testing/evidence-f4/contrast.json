@@ -1,0 +1,62 @@
+[
+  {
+    "name": "light body",
+    "foreground": "020617",
+    "background": "F8FAFC",
+    "ratio": 19.28
+  },
+  {
+    "name": "light secondary text",
+    "foreground": "475569",
+    "background": "F8FAFC",
+    "ratio": 7.24
+  },
+  {
+    "name": "light variant text",
+    "foreground": "475569",
+    "background": "E8ECF1",
+    "ratio": 6.39
+  },
+  {
+    "name": "light primary button",
+    "foreground": "FFFFFF",
+    "background": "0F172A",
+    "ratio": 17.85
+  },
+  {
+    "name": "light error",
+    "foreground": "B91C1C",
+    "background": "F8FAFC",
+    "ratio": 6.18
+  },
+  {
+    "name": "dark body",
+    "foreground": "F8FAFC",
+    "background": "0F172A",
+    "ratio": 17.06
+  },
+  {
+    "name": "dark secondary text",
+    "foreground": "CBD5E1",
+    "background": "0F172A",
+    "ratio": 12.02
+  },
+  {
+    "name": "dark variant text",
+    "foreground": "CBD5E1",
+    "background": "1E293B",
+    "ratio": 9.85
+  },
+  {
+    "name": "dark primary button",
+    "foreground": "0F172A",
+    "background": "E2E8F0",
+    "ratio": 14.48
+  },
+  {
+    "name": "dark error",
+    "foreground": "FCA5A5",
+    "background": "0F172A",
+    "ratio": 9.41
+  }
+]

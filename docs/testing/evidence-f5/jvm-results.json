@@ -1,0 +1,62 @@
+{
+  "core\\model\\build\\test-results\\test\\TEST-ec.finanzas.model.FoundationTest.xml": {
+    "name": "ec.finanzas.model.FoundationTest",
+    "tests": "4",
+    "skipped": "0",
+    "failures": "0",
+    "errors": "0",
+    "timestamp": "2026-11-09T23:57:47.045Z",
+    "hostname": "DESKTOP-S771NJ9",
+    "time": "0.124"
+  },
+  "feature\\dashboard\\build\\test-results\\test\\TEST-ec.finanzas.dashboard.InsightsTest.xml": {
+    "name": "ec.finanzas.dashboard.InsightsTest",
+    "tests": "6",
+    "skipped": "0",
+    "failures": "0",
+    "errors": "0",
+    "timestamp": "2026-11-11T01:58:31.702Z",
+    "hostname": "DESKTOP-S771NJ9",
+    "time": "0.05"
+  },
+  "feature\\ledger\\build\\test-results\\test\\TEST-ec.finanzas.ledger.LedgerRulesTest.xml": {
+    "name": "ec.finanzas.ledger.LedgerRulesTest",
+    "tests": "14",
+    "skipped": "0",
+    "failures": "0",
+    "errors": "0",
+    "timestamp": "2026-11-11T01:58:46.167Z",
+    "hostname": "DESKTOP-S771NJ9",
+    "time": "0.032"
+  },
+  "feature\\parsers\\build\\test-results\\test\\TEST-ec.finanzas.parsers.FinancialParsersTest.xml": {
+    "name": "ec.finanzas.parsers.FinancialParsersTest",
+    "tests": "18",
+    "skipped": "0",
+    "failures": "0",
+    "errors": "0",
+    "timestamp": "2026-11-10T01:00:30.198Z",
+    "hostname": "DESKTOP-S771NJ9",
+    "time": "0.361"
+  },
+  "feature\\reconciliation\\build\\test-results\\test\\TEST-ec.finanzas.reconciliation.ObservationMatchingTest.xml": {
+    "name": "ec.finanzas.reconciliation.ObservationMatchingTest",
+    "tests": "5",
+    "skipped": "0",
+    "failures": "0",
+    "errors": "0",
+    "timestamp": "2026-11-10T21:30:15.014Z",
+    "hostname": "DESKTOP-S771NJ9",
+    "time": "0.021"
+  },
+  "feature\\settings\\build\\test-results\\test\\TEST-ec.finanzas.settings.MovementCsvTest.xml": {
+    "name": "ec.finanzas.settings.MovementCsvTest",
+    "tests": "4",
+    "skipped": "0",
+    "failures": "0",
+    "errors": "0",
+    "timestamp": "2026-11-12T15:18:05.273Z",
+    "hostname": "DESKTOP-S771NJ9",
+    "time": "0.039"
+  }
+}

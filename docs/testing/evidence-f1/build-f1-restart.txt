@@ -1,0 +1,16 @@
+> Task :core:database:lintAnalyzeDebugAndroidTest
+> Task :core:database:compileDebugAndroidTestKotlin
+> Task :core:database:compileDebugAndroidTestJavaWithJavac NO-SOURCE
+> Task :core:database:dexBuilderDebugAndroidTest
+> Task :core:database:mergeDebugAndroidTestGlobalSynthetics UP-TO-DATE
+> Task :core:database:processDebugAndroidTestJavaRes UP-TO-DATE
+> Task :core:database:mergeDebugAndroidTestJavaResource UP-TO-DATE
+> Task :core:database:mergeProjectDexDebugAndroidTest
+> Task :core:database:packageDebugAndroidTest
+> Task :core:database:createDebugAndroidTestApkListingFileRedirect UP-TO-DATE
+> Task :core:database:assembleDebugAndroidTest
+> Task :core:database:lintReportDebug UP-TO-DATE
+> Task :core:database:lintDebug
+
+BUILD SUCCESSFUL in 3m 36s
+117 actionable tasks: 9 executed, 108 up-to-date

@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">Finanzas Locales</string>
+    <string name="welcome">Tu dinero, en tu teléfono.</string>
+    <string name="welcome_body">Registra movimientos y revisa avisos autorizados sin compartir credenciales bancarias. Tus datos se conservan cifrados en este teléfono.</string>
+    <string name="back">Volver</string>
+    <string name="retry">Reintentar</string>
+    <string name="connection">Conexión de notificaciones</string>
+    <string name="connection_body">Autoriza el acceso en Ajustes de Android y selecciona cada fuente. Habilitar el permiso no inicia la captura hasta que la actives aquí.</string>
+    <string name="setup">Configuración inicial</string>
+    <string name="setup_body">Añade tus cuentas, billeteras y tarjetas por alias, con saldos iniciales opcionales. Ninguna cuenta se crea automáticamente.</string>
+    <string name="dashboard">Un vistazo a tus finanzas</string>
+    <string name="dashboard_body">Consulta ingresos, consumo y saldos estimados de tus movimientos registrados.</string>
+    <string name="movements">Movimientos</string>
+    <string name="movements_body">Registra, corrige y concilia operaciones. Las pruebas y los pendientes no se incluyen en los totales.</string>
+    <string name="review">Por revisar</string>
+    <string name="review_body">Completa los datos antes de contabilizar o vincula el aviso a una operación ya registrada. Los borradores no afectan gastos ni saldos.</string>
+    <string name="accounts">Cuentas y tarjetas</string>
+    <string name="accounts_body">Administra cuentas propias y saldos estimados. PeiGo admite registro manual; su parser automático continúa desactivado.</string>
+    <string name="budgets">Categorías y presupuestos</string>
+    <string name="budgets_body">Configura categorías, reglas por comercio, límites mensuales y alertas opcionales.</string>
+    <string name="settings">Ajustes</string>
+    <string name="settings_body">Administra tus fuentes, pausa la captura y consulta el diagnóstico local. La exportación y el borrado completo todavía no están disponibles en esta versión.</string>
+    <string name="estimates_notice">La cobertura puede ser incompleta. Los saldos y la deuda se mostrarán como estimados, nunca como información verificada por el banco.</string>
+    <string name="pending_feature">Esta sección aún no está disponible en esta vista previa.</string>
+    <string name="storage_checking">Comprobando almacenamiento local…</string>
+    <string name="storage_ready">Almacenamiento cifrado disponible</string>
+    <string name="storage_error">No se pudo abrir el almacenamiento</string>
+    <string name="storage_error_body">Puedes reintentar. Tus datos no se borrarán ni se restablecerán automáticamente.</string>
+</resources>
+

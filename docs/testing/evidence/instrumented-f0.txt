@@ -1,0 +1,36 @@
+> Task :app:mergeProjectDexDebugAndroidTest UP-TO-DATE
+> Task :app:mergeDebugAndroidTestJniLibFolders UP-TO-DATE
+> Task :app:mergeDebugAndroidTestNativeLibs NO-SOURCE
+> Task :app:stripDebugAndroidTestDebugSymbols NO-SOURCE
+> Task :app:validateSigningDebugAndroidTest UP-TO-DATE
+> Task :app:writeDebugAndroidTestSigningConfigVersions UP-TO-DATE
+> Task :app:packageDebugAndroidTest UP-TO-DATE
+> Task :app:createDebugAndroidTestApkListingFileRedirect UP-TO-DATE
+> Task :core:database:connectedDebugAndroidTest
+> Task :app:connectedDebugAndroidTest
+Starting 1 tests on finanzas-f0-api29(AVD) - 10
+Starting 1 tests on finanzas-f0-api36(AVD) - 16
+
+finanzas-f0-api29(AVD) - 10 Tests 0/1 completed. (0 skipped) (0 failed)
+finanzas-f0-api36(AVD) - 16 Tests 0/1 completed. (0 skipped) (0 failed)
+finanzas-f0-api29(AVD) - 10 Tests 1/1 completed. (0 skipped) (0 failed)
+finanzas-f0-api36(AVD) - 16 Tests 1/1 completed. (0 skipped) (0 failed)
+Finished 1 tests on finanzas-f0-api36(AVD) - 16
+Finished 1 tests on finanzas-f0-api29(AVD) - 10
+
+> Task :core:database:connectedDebugAndroidTest
+Starting 3 tests on finanzas-f0-api29(AVD) - 10
+Starting 3 tests on finanzas-f0-api36(AVD) - 16
+
+ec.finanzas.database.ProcessRestartProbe > roundTripAcrossProcesses[finanzas-f0-api29(AVD) - 10] [33mSKIPPED [0m
+
+Finished 4 tests on finanzas-f0-api29(AVD) - 10
+
+> Task :core:database:connectedDebugAndroidTest
+
+ec.finanzas.database.ProcessRestartProbe > roundTripAcrossProcesses[finanzas-f0-api36(AVD) - 16] [33mSKIPPED [0m
+
+Finished 4 tests on finanzas-f0-api36(AVD) - 16
+
+BUILD SUCCESSFUL in 4m 57s
+178 actionable tasks: 2 executed, 176 up-to-date

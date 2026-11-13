@@ -1,0 +1,50 @@
+{
+  "core/model": [
+    {
+      "name": "ec.finanzas.model.FoundationTest",
+      "tests": "4",
+      "skipped": "0",
+      "failures": "0",
+      "errors": "0",
+      "timestamp": "2026-11-09T23:57:47.045Z",
+      "hostname": "DESKTOP-S771NJ9",
+      "time": "0.124"
+    }
+  ],
+  "feature/parsers": [
+    {
+      "name": "ec.finanzas.parsers.FinancialParsersTest",
+      "tests": "18",
+      "skipped": "0",
+      "failures": "0",
+      "errors": "0",
+      "timestamp": "2026-11-10T01:00:30.198Z",
+      "hostname": "DESKTOP-S771NJ9",
+      "time": "0.361"
+    }
+  ],
+  "feature/ledger": [
+    {
+      "name": "ec.finanzas.ledger.LedgerRulesTest",
+      "tests": "14",
+      "skipped": "0",
+      "failures": "0",
+      "errors": "0",
+      "timestamp": "2026-11-10T21:29:54.542Z",
+      "hostname": "DESKTOP-S771NJ9",
+      "time": "0.039"
+    }
+  ],
+  "feature/reconciliation": [
+    {
+      "name": "ec.finanzas.reconciliation.ObservationMatchingTest",
+      "tests": "5",
+      "skipped": "0",
+      "failures": "0",
+      "errors": "0",
+      "timestamp": "2026-11-10T21:30:15.014Z",
+      "hostname": "DESKTOP-S771NJ9",
+      "time": "0.021"
+    }
+  ]
+}

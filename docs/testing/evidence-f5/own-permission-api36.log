@@ -1,0 +1,2 @@
+Own POST_NOTIFICATIONS revoked before instrumentation. CaptureListenerTest runs with own notification permission denied.
+Own POST_NOTIFICATIONS restored to denied after instrumentation.

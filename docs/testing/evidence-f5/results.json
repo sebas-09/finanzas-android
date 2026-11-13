@@ -1,0 +1,86 @@
+{
+  "phase": "F5",
+  "date": "2026-11-12",
+  "status": "local-functions-verified-external-acceptance-pending",
+  "versionName": "0.6.0-f5",
+  "versionCode": 6,
+  "roomSchema": 5,
+  "artifact": "artifacts/finanzas-locales-f5-debug.apk",
+  "sha256": "33e974799dd777314dd8930e4f0e508e284d2d4a5c5fea26806d53e66c2d8765",
+  "signerSha256": "4c25c60c1f166aa9048df078172f89164251d5b6a15f59b9cdc1f4d23f25f656",
+  "build": "passed",
+  "lint": "passed",
+  "jvm": {
+    "passed": 51,
+    "failed": 0
+  },
+  "android": {
+    "29": {
+      "profile": "finanzas-f5-api29",
+      "databasePassed": 26,
+      "databaseSkipped": 1,
+      "appPassed": 11,
+      "appSkipped": 1,
+      "processRestartWrite": "passed",
+      "processRestartRead": "passed",
+      "f4DataAndKeysPreservedOnUpdate": true,
+      "realSystemDocumentPicker": "passed",
+      "realUiDataClear": "passed",
+      "databaseAndHmacKeysRenewed": true,
+      "externalCsvPreservedAfterClear": true
+    },
+    "36": {
+      "profile": "finanzas-f5-api36",
+      "databasePassed": 26,
+      "databaseSkipped": 1,
+      "appPassed": 11,
+      "appSkipped": 1,
+      "processRestartWrite": "passed",
+      "processRestartRead": "passed",
+      "f4DataAndKeysPreservedOnUpdate": true,
+      "realSystemDocumentPicker": "passed",
+      "realUiDataClear": "passed",
+      "databaseAndHmacKeysRenewed": true,
+      "externalCsvPreservedAfterClear": true
+    }
+  },
+  "privacy": {
+    "productionSourceFilesReviewed": 42,
+    "unreviewedLoggingSites": [],
+    "technicalServiceDump": "state/gate/failure class/counters only; no amounts or notification text",
+    "backupAndDeviceTransferExcluded": true,
+    "knownAnalyticsVendorsAbsent": true,
+    "scope": "Static source/dependency review. Manifest checked separately; not a physical log capture."
+  },
+  "testApkSha256": {
+    "app/build/outputs/apk/androidTest/debug/app-debug-androidTest.apk": "1f1a7e78f6d1b4a1bf8de20c1c5053705b25d1691ccf77428a6b259f0a2699af",
+    "core/database/build/outputs/apk/androidTest/debug/database-debug-androidTest.apk": "0fdf3581f4fd329c8085a4305747269265e7ffabe50f7b16b4290b2befc2a5b1"
+  },
+  "unsignedRelease": {
+    "artifact": "app/build/outputs/apk/release/app-release-unsigned.apk",
+    "sha256": "bc7a726959ed34e98e4abb08ba0ebe509f2f1d287354daa6d2bf31a9c4690cad",
+    "r8Build": "passed",
+    "signed": false,
+    "installTested": false
+  },
+  "releaseSigning": "Configured via four FINANZAS_RELEASE_* environment variables; owner explicitly deferred key provision",
+  "accessibility": {
+    "api36LargeText": "200% portrait confirmation/cancel flow passed",
+    "darkTheme": "visually reviewed",
+    "api36Landscape": "font scale 1.0; scrollable dialog and cancel controls visually reviewed",
+    "spokenTalkBack": "pending: service unavailable in AOSP images"
+  },
+  "updateScope": {
+    "29": "F4 -> intermediate F5 -> final F5, preserving original fixture and keys, with cold-boot recovery",
+    "36": "F4 -> final F5 directly"
+  },
+  "limitations": [
+    "Physical banking/OEM and spoken TalkBack acceptance pending",
+    "Graceful adb reboot of API29 stalled; verified cold restart of same data disk after target-only recovery",
+    "API36 first F4 probe had startup ANR before test execution while BOOT_COMPLETED was still processing; retry passed",
+    "System UI ANR during API36 visual review; only system component closed, evidence retained",
+    "SQLite full condition exercised using max_page_count; physical disk not exhausted",
+    "Final signed release and clean/update installation await owner keystore",
+    "CI configured locally, not executed remotely; PeiGo parser disabled, Outlook experimental"
+  ]
+}

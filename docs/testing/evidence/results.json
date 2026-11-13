@@ -1,0 +1,56 @@
+{
+  "verifiedAtUtc": "2026-11-09T17:28:47.753117+00:00",
+  "variant": "debug",
+  "applicationId": "ec.finanzas.locales",
+  "minSdk": 29,
+  "targetSdk": 36,
+  "apkSha256": "2579dd2085d26fc30189226c125a41ea37b3a25261f035cb667ff815fba27e14",
+  "apkBytes": 48787274,
+  "suites": [
+    {
+      "source": "core/model/build/test-results/test/TEST-ec.finanzas.model.FoundationTest.xml",
+      "tests": 4,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    {
+      "source": "app/build/outputs/androidTest-results/connected/debug/TEST-finanzas-f0-api29(AVD) - 10-_app-.xml",
+      "tests": 1,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    {
+      "source": "app/build/outputs/androidTest-results/connected/debug/TEST-finanzas-f0-api36(AVD) - 16-_app-.xml",
+      "tests": 1,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    {
+      "source": "core/database/build/outputs/androidTest-results/connected/debug/TEST-finanzas-f0-api29(AVD) - 10-_core_database-.xml",
+      "tests": 3,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 1
+    },
+    {
+      "source": "core/database/build/outputs/androidTest-results/connected/debug/TEST-finanzas-f0-api36(AVD) - 16-_core_database-.xml",
+      "tests": 3,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 1
+    }
+  ],
+  "processRestart": {
+    "api29": {
+      "write": "PASS",
+      "read": "PASS"
+    },
+    "api36": {
+      "write": "PASS",
+      "read": "PASS"
+    }
+  }
+}

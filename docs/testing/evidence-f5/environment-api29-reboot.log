@@ -1,0 +1,3 @@
+ADB reboot requested after successful F4-to-F5 update. The target stopped responding to shell commands while devices still reported online. Target-only adb reconnect closed the pending shell. The transport then reported offline. Data disk preserved; reboot acceptance remains pending recovery.
+Transport remained offline. Stopped only the verified QEMU process for finanzas-f5-api29 and relaunched the same AVD without wiping or snapshots. Cold-start verification follows; graceful ADB reboot is not claimed.
+Recovery cold boot completed (sys.boot_completed=1). Final APK installed as update. Upgrade probe passed after cold start with unchanged wrapped-key hash, HMAC hash, balance, movement, rule, budget and queued item. Graceful adb reboot remains unverified.

@@ -1,0 +1,17 @@
+.gradle/
+.kotlin/
+.idea/
+**/build/
+local.properties
+.tooling/
+artifacts/
+*.jks
+*.keystore
+*.p12
+*.pfx
+.env
+.env.*
+signing.properties
+*.hprof
+__pycache__/
+*.pyc

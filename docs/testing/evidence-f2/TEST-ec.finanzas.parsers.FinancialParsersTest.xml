@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="ec.finanzas.parsers.FinancialParsersTest" tests="18" skipped="0" failures="0" errors="0" timestamp="2026-11-10T01:00:30.198Z" hostname="DESKTOP-S771NJ9" time="0.361">
+  <properties/>
+  <testcase name="guayaquilIgnoresAccountNumber" classname="ec.finanzas.parsers.FinancialParsersTest" time="0.238"/>
+  <testcase name="pichinchaOutgoingRequiresSuccess" classname="ec.finanzas.parsers.FinancialParsersTest" time="0.003"/>
+  <testcase name="securityPromotionsFailuresAndOtherCurrencyRejected" classname="ec.finanzas.parsers.FinancialParsersTest" time="0.006"/>
+  <testcase name="summariesAreRejectedAndTruncationExplained" classname="ec.finanzas.parsers.FinancialParsersTest" time="0.004"/>
+  <testcase name="produbancoSeparatesOperationAndReceipt" classname="ec.finanzas.parsers.FinancialParsersTest" time="0.018"/>
+  <testcase name="exactCentsAndGrouping" classname="ec.finanzas.parsers.FinancialParsersTest" time="0.012"/>
+  <testcase name="incomingDoesNotInventPurpose" classname="ec.finanzas.parsers.FinancialParsersTest" time="0.004"/>
+  <testcase name="ambiguousInvalidAndFutureDatesStayUnknown" classname="ec.finanzas.parsers.FinancialParsersTest" time="0.021"/>
+  <testcase name="rejectsAmbiguityOverflowAndSigns" classname="ec.finanzas.parsers.FinancialParsersTest" time="0.004"/>
+  <testcase name="peigoStaysDisabledAndOtherProvidersCannotReuseFormat" classname="ec.finanzas.parsers.FinancialParsersTest" time="0.005"/>
+  <testcase name="malformedTokensCannotBeAcceptedAsNumericPrefixes" classname="ec.finanzas.parsers.FinancialParsersTest" time="0.025"/>
+  <testcase name="contradictoryAmountsRemainIncomplete" classname="ec.finanzas.parsers.FinancialParsersTest" time="0.002"/>
+  <testcase name="repeatedViewsAreNotConflictingAmounts" classname="ec.finanzas.parsers.FinancialParsersTest" time="0.001"/>
+  <testcase name="deunaPaymentAndTopupStayDifferent" classname="ec.finanzas.parsers.FinancialParsersTest" time="0.002"/>
+  <testcase name="merchantRequiresExplicitFieldAndIsMinimized" classname="ec.finanzas.parsers.FinancialParsersTest" time="0.002"/>
+  <testcase name="outlookOptInDoesNotGuessSpotifyOrBank" classname="ec.finanzas.parsers.FinancialParsersTest" time="0.003"/>
+  <testcase name="missingAmountNeverUsesDateOrAccount" classname="ec.finanzas.parsers.FinancialParsersTest" time="0.002"/>
+  <testcase name="invalidAmountInAnotherViewMakesTheCandidateIncomplete" classname="ec.finanzas.parsers.FinancialParsersTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

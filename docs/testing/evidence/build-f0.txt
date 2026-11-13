@@ -1,0 +1,12 @@
+> Task :app:mergeProjectDexDebugAndroidTest FROM-CACHE
+> Task :app:packageDebugAndroidTest
+> Task :app:createDebugAndroidTestApkListingFileRedirect
+> Task :app:assembleDebugAndroidTest
+> Task :app:lintAnalyzeDebugAndroidTest
+> Task :app:lintAnalyzeDebug
+> Task :app:lintReportDebug
+> Task :app:lintDebug
+> Task :app:lint
+
+BUILD SUCCESSFUL in 3m 36s
+351 actionable tasks: 70 executed, 24 from cache, 257 up-to-date

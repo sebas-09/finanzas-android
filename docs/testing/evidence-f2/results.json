@@ -1,0 +1,36 @@
+{
+  "verifiedAtUtc": "2026-11-10T01:36:38.709119+00:00",
+  "phase": "F2",
+  "versionCode": 3,
+  "versionName": "0.3.0-f2",
+  "apk": "artifacts\\finanzas-locales-f2-debug.apk",
+  "sha256": "c9bfd9bfa66f9805984c6e5dbbcf407bc9ce16c9c3ab04bbbdd448b9ddad0e13",
+  "signerSha256": "4c25c60c1f166aa9048df078172f89164251d5b6a15f59b9cdc1f4d23f25f656",
+  "jvmTests": {
+    "ec.finanzas.model.FoundationTest": 4,
+    "ec.finanzas.parsers.FinancialParsersTest": 18
+  },
+  "android": {
+    "29": {
+      "appPassed": 4,
+      "databaseReported": 9,
+      "databasePassed": 8,
+      "defaultProcessProbeSkipped": 1,
+      "restartWriteReadPassed": 2
+    },
+    "36": {
+      "appPassed": 4,
+      "databaseReported": 9,
+      "databasePassed": 8,
+      "defaultProcessProbeSkipped": 1,
+      "restartWriteReadPassed": 2
+    }
+  },
+  "buildAndLint": "passed",
+  "manifest": "passed",
+  "bankCoverage": "preliminary-spec-fixtures-only",
+  "physicalBankValidation": "pending",
+  "peigo": "disabled-no-samples",
+  "outlook": "experimental-explicit-opt-in",
+  "ledgerEffectsInF2": false
+}

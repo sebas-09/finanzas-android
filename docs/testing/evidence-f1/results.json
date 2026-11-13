@@ -1,0 +1,37 @@
+{
+  "verifiedAtUtc": "2026-11-09T20:22:47.382456+00:00",
+  "phase": "F1",
+  "versionName": "0.2.0-f1",
+  "versionCode": 2,
+  "applicationId": "ec.finanzas.locales",
+  "apkSha256": "89095bac473e312762b04bcedfffa94794d2cfb295a06993f1fe0c3308927b96",
+  "apkBytes": 50336734,
+  "signingCertificateSha256": "4c25c60c1f166aa9048df078172f89164251d5b6a15f59b9cdc1f4d23f25f656",
+  "sameSigningCertificateAsF0": true,
+  "roomVersion": 2,
+  "roomTables": 19,
+  "jvm": {
+    "tests": 4,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "android": {
+    "29": {
+      "uiAndListenerPassed": 3,
+      "databasePassed": 6,
+      "databaseSkipped": 1,
+      "processRestartWrite": "PASS",
+      "processRestartReadAndDrainOnce": "PASS"
+    },
+    "36": {
+      "uiAndListenerPassed": 3,
+      "databasePassed": 6,
+      "databaseSkipped": 1,
+      "processRestartWrite": "PASS",
+      "processRestartReadAndDrainOnce": "PASS"
+    }
+  },
+  "physicalBankAppsValidated": [],
+  "physicalAcceptancePending": true
+}

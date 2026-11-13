@@ -1,0 +1,8 @@
+{
+  "productionSourceFilesReviewed": 42,
+  "unreviewedLoggingSites": [],
+  "technicalServiceDump": "state/gate/failure class/counters only; no amounts or notification text",
+  "backupAndDeviceTransferExcluded": true,
+  "knownAnalyticsVendorsAbsent": true,
+  "scope": "Static source/dependency review. Manifest checked separately; not a physical log capture."
+}

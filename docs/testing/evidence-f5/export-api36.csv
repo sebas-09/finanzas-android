@@ -1,0 +1,2 @@
+"id","fecha_guayaquil","cuenta_alias","entidad","instrumento","contracuenta_alias","importe","moneda","tipo","sentido","categoria","comercio_alias","nota","origen","estado","operacion_original_id","fecha_estimada"
+"f5-buy","1969-12-31T19:00:01-05:00","F5 Banco","PICHINCHA","BANK_ACCOUNT","","3.99","USD","EXPENSE","OUTGOING","F5 categoría","","f5-upgrade-marker","MANUAL","MANUAL_CONFIRMED","","false"

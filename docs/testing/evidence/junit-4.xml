@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<testsuite name="ec.finanzas.database.EncryptedDatabaseTest" tests="3" failures="0" errors="0" skipped="1" time="5.151" timestamp="2026-11-09T17:25:29" hostname="localhost">
+  <properties>
+    <property name="device" value="finanzas-f0-api29(AVD) - 10" />
+    <property name="flavor" value="" />
+    <property name="project" value=":core:database" />
+  </properties>
+  <testcase name="encryptedDatabaseReopensUsingWrappedKey" classname="ec.finanzas.database.EncryptedDatabaseTest" time="2.388" />
+  <testcase name="missingWrappedSecretNeverResetsAnExistingDatabase" classname="ec.finanzas.database.EncryptedDatabaseTest" time="0.947" />
+  <testcase name="roundTripAcrossProcesses" classname="ec.finanzas.database.ProcessRestartProbe" time="0.116">
+    <skipped />
+  </testcase>
+</testsuite>
